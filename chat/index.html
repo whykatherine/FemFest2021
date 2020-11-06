@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: 0.5%; }
+      form button { width: 9%; background: #EB59D6; color: #fff; border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function () {
+        var socket = io();
+        let myNickname = prompt("Enter nickname:");
+        console.log(myNickname);
+        socket.emit("user", myNickname);
+        $('form').submit(function(e){
+          e.preventDefault(); // prevents page reloading
+          socket.emit('chat message', {
+            nickname: myNickname,
+            text: $('#m').val()
+          });
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function (msg) {
+          console.log(msg);
+          $('#messages').append($('<li>').text(msg.nickname + ": " + msg.text));
+        });
+        socket.on("user", function (nickname) {
+          console.log(nickname);
+          $("#messages").append($("<li>").text(nickname + " just joined."));
+        });
+      });
+    </script>
+  </body>
+</html>
