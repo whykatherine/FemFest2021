@@ -15,8 +15,10 @@ for (var i = 0; i < 20; i++) {
   var coin = getRandomInt(2);
   if (coin == 0) {
     avatars[i].setAttribute("src", "testAvatar2.png");
+    // https://lagreenw.github.io/femfest/testAvatar2.png
   } else {
     avatars[i].setAttribute("src", "testAvatar.png");
+    // https://lagreenw.github.io/femfest/testAvatar.png
   }
   avatars[i].setAttribute("alt", "test avatar");
 
