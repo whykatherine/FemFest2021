@@ -1,0 +1,23 @@
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -100px;
+  /* image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated; */
+}
+
+#animationContainer {
+  width: 100vw;
+  height: 150px;
+  position: relative;
+  background: yellow;
+}
+
+body {
+  margin: 0px;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}
