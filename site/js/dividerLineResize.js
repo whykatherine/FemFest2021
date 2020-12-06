@@ -44,6 +44,7 @@ function addCenter() {
   var center = document.createElement("img");
   center.setAttribute("src", "img/divider/divider_center.png");
   center.setAttribute("class", "dividerTile");
+  center.setAttribute("id", "dividerTileCenter");
   document.getElementById("dividerLine").appendChild(center);
 }
 
