@@ -53,7 +53,7 @@ STRUCTURE
   display: grid;
   height: 100vh;
   margin: 1em auto 1em;
-  grid-template-areas: 
+  grid-template-areas:
         "header"
         "nav"
         "main"
@@ -100,6 +100,7 @@ HEADER
 
 .header {
   text-align: center;
+  font-size: 0px;
 }
 
 .logo {
@@ -107,6 +108,19 @@ HEADER
   width: 100%;
   max-width: 500px;
   margin: auto;
+}
+
+#dividerLine {
+  white-space: nowrap;
+}
+
+.dividerTile {
+  width: 50px;
+  height: 15px;
+}
+
+#dividerTileCenter {
+  width: 100px;
 }
 
 /********
