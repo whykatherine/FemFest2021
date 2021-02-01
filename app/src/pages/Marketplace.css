@@ -1,0 +1,14 @@
+.vendor {
+  text-align: center;
+  margin: 10em auto;
+  max-width: 600px;
+}
+
+.vendor__items {
+  display: flex;
+  justify-content: center;
+}
+
+.vendor__item {
+  width: 250px;
+}

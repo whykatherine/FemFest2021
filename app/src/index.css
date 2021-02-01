@@ -1,0 +1,154 @@
+/* https://www.instagram.com/jonah_of_arc/
+https://www.instagram.com/cookii.mp3/
+https://docs.google.com/presentation/d/1NmrN_U9t7qVDccgHuSaNbfMPGQBHHfKb9VcgyZTj-rc/edit#slide=id.gb5b0871540_0_75 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Krungthep", sans-serif;
+  /* background-color: #FF00FC; */
+  /* background-color: #2513F1; */
+  /* background-color: #000; */
+  /* color: #fff; */
+  background-color: #E2EEFE;
+  line-height: 1.5;
+}
+
+a {
+  /* color: #99F2F6; */
+  color: #FE9EE9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sofachrome", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.container {
+  position: relative;
+  min-height: 150vh;
+}
+
+.header {
+  /* padding: 5em; */
+  background-color: #000;
+  color: #fff;
+  /* background-color: #DCDDDC; */
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.header > div {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  height: 40px;
+  /* width: 500px; */
+  margin: auto;
+}
+
+.nav ul {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 100%;
+  gap: 1em;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 .5em;
+}
+
+.nav a:hover {
+  background-color: #FE9EE9;
+  color: #fff;
+}
+
+.header p {
+  margin: 0;
+}
+
+/* desktop icons */
+
+.desktop__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin: 2em;
+  justify-content: center;
+}
+
+.desktop__icon {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  line-height: 1;
+  gap: .5em;
+}
+
+.desktop__icon img {
+  max-height: 100px;
+  /* max-width: 80%; */
+  margin: auto;
+}
+
+.desktop__icon p {
+  margin: 0;
+  background-color: #fff;
+}
+
+  @media (min-width: 800px) {
+    .desktop__icons {
+      position: absolute;
+      top: 50px;
+      right: 5%;
+      width: 8%;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .desktop__icon {
+      width: 100%;
+    }
+  }
