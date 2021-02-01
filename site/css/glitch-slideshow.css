@@ -22,13 +22,13 @@
   opacity: 0;
   top: 0;
   left: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .js .slide--current {
   position: relative;
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .slide__img {
