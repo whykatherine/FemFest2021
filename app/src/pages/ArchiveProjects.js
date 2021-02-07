@@ -3,9 +3,15 @@ import React from 'react';
 
 function ArchiveProjects(props) {
   return (
-    <React.Fragment>
-      <p>content</p>
-    </React.Fragment>
+    <div className="archive-projects">
+      <div className="text">
+        <h1 data-content="Archive Projects">Archive Projects</h1>
+      </div>
+
+      <div className="text">
+        <p>content</p>
+      </div>
+    </div>
   );
 }
 

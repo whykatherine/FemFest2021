@@ -2,6 +2,39 @@
 https://www.instagram.com/cookii.mp3/
 https://docs.google.com/presentation/d/1NmrN_U9t7qVDccgHuSaNbfMPGQBHHfKb9VcgyZTj-rc/edit#slide=id.gb5b0871540_0_75 */
 
+:root {
+  /* general */
+  --bg-color: #FE00C2;
+  --heading-color: #0ff;
+  --link-color: #F57BD1;
+  --link-hover-color: #FD2ED7;
+  /* window */
+  --window-border-color: #FF00FD;
+  --window-bar-bg-color: #2300F4;
+  --window-bg-color: #170C52;
+  --window-text-color: #fff;
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--link-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--link-hover-color);
+} 
+
 *,
 *::before,
 *::after {
@@ -21,13 +54,18 @@ body {
   /* background-color: #2513F1; */
   /* background-color: #000; */
   /* color: #fff; */
-  background-color: #E2EEFE;
+  /* background-color: #E2EEFE; */
+  background-color: var(--bg-color);
+  /* https://mybrandnewlogo.com/color-gradient-generator */
+  background-image: radial-gradient(circle at 20.12% -14.09%, #00b6e4 0, #00b5f9 3.33%, #00b4ff 6.67%, #00b3ff 10%, #00b0ff 13.33%, #00adff 16.67%, #00a9ff 20%, #00a3ff 23.33%, #009dff 26.67%, #0094ff 30%, #008bff 33.33%, #577fff 36.67%, #9472ff 40%, #bb63ff 43.33%, #da51ff 46.67%, #f23cf2 50%, #ff1edc 53.33%, #ff00c5 56.67%, #ff00ae 60%, #ff0096 63.33%, #ff007e 66.67%, #ff0067 70%, #ff0050 73.33%, #ff1c39 76.67%, #ff391e 80%, #ff4e00 83.33%, #fb5e00 86.67%, #ec6c00 90%, #dc7900 93.33%, #ca8300 96.67%, #b68c00 100%);
+  background-size: 33.33%;
   line-height: 1.5;
 }
 
 a {
   /* color: #99F2F6; */
-  color: #FE9EE9;
+  /* color: #FE9EE9; */
+  color: var(--link-color);
 }
 
 h1,
@@ -39,6 +77,40 @@ h6 {
   font-family: "Sofachrome", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--heading-color);
+  width: max-content;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 5px;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  content: attr(data-content);
+  position: absolute;
+  left: -.1em;
+  width: max-content;
+  color: #fff;
+  z-index: -1;
+}
+
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+  content: attr(data-content);
+  position: absolute;
+  left: .1em;
+  width: max-content;
+  color: #f36;
+  z-index: -1;
 }
 
 h1 {
@@ -129,7 +201,7 @@ h1 {
 
 .desktop__icon img {
   max-height: 100px;
-  /* max-width: 80%; */
+  max-width: 80%;
   margin: auto;
 }
 

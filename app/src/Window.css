@@ -1,9 +1,12 @@
 .window {
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  border: 5px solid var(--window-bar-bg-color);
   /* border: 5px solid #DDDDDD; */
-  overflow: scroll;
+  overflow-y: scroll;
   box-shadow: 1px 1px 5px rgba(0,0,0,.2);
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--window-bg-color);
+  color: var(--window-text-color);
   margin: 2em auto;
 }
   @media (max-width: 800px) {
@@ -50,9 +53,10 @@
   }
 
 .window__bar {
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: var(--window-bar-bg-color);
   /* background-color: #DDDDDD; */
-  color: #fff;
+  color: var(--window-text-color);
   position: sticky;
   top: 0;
   text-align: center;

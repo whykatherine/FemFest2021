@@ -5,14 +5,19 @@ import './VisualArt.css';
 
 function VisualArt(props) {
   return (
-    <React.Fragment>
-      <div className="visual-art">
+    <div className="visual-art">
+
+      <div className="text">
+        <h1 data-content="Visual Art">Visual Art</h1>
+      </div>
+
+      <div className="gallery">
         <div className="art"></div>
         <div className="art"></div>
         <div className="art"></div>
         <div className="art"></div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

@@ -15,8 +15,13 @@ function Library(props) {
   ];
 
   return (
-    <React.Fragment>
-      <div className="library">
+    <div className="library">
+
+      <div className="text">
+        <h1 data-content="Library">Library</h1>
+      </div>
+
+      <div className="gallery">
         {books.map(book => (
           <div className="library__book" key={book[0]}>
             <div className="book__cover">
@@ -27,7 +32,7 @@ function Library(props) {
           </div>
         ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

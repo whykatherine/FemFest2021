@@ -20,25 +20,28 @@ function Marketplace(props) {
   };
 
   return (
-    <React.Fragment>
-      <div className="marketplace">
-        {Object.keys(vendors).map(vendor => (
-          <div className="vendor" key={vendor}>
-            <p>{vendor}</p>
-            <p>{vendors[vendor]["description"]}</p>
-            <div className="vendor__items">
-              {vendors[vendor]["items"].map(item => (
-                <div className="vendor__item" key={item[0]}>
-                  <img src="/img/item.png" alt="" />
-                  <p className="item__title">{item[0]}</p>
-                  <p className="item__price">{item[1].toLocaleString(undefined, { minimumFractionDigits: 2 })}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+    <div className="marketplace">
+      
+      <div className="text">
+        <h1 data-content="Marketplace">Marketplace</h1>
       </div>
-    </React.Fragment>
+
+      {Object.keys(vendors).map(vendor => (
+        <div className="vendor" key={vendor}>
+          <p>{vendor}</p>
+          <p>{vendors[vendor]["description"]}</p>
+          <div className="vendor__items">
+            {vendors[vendor]["items"].map(item => (
+              <div className="vendor__item" key={item[0]}>
+                <img src="/img/item.png" alt="" />
+                <p className="item__title">{item[0]}</p>
+                <p className="item__price">{item[1].toLocaleString(undefined, { minimumFractionDigits: 2 })}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 

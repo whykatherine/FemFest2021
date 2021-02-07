@@ -3,9 +3,16 @@ import React from 'react';
 
 function QueerResources(props) {
   return (
-    <React.Fragment>
-      <p>content</p>
-    </React.Fragment>
+    <div className="queer-resources">
+
+      <div className="text">
+        <h1 data-content="Queer Resources">Queer Resources</h1>
+      </div>
+
+      <div className="text">
+        <p>content</p>
+      </div>
+    </div>
   );
 }
 

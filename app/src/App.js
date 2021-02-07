@@ -22,11 +22,11 @@ class App extends Component {
           <div className="container">
             <div className="desktop__icons">
               <a href="https://lalgbtcenter.org/" className="desktop__icon">
-                <img src="/img/sponsors/lgbt center 1.png" alt="LA LGBT Center logo" />
+                <img src="/img/sponsors/lgbt center.png" alt="LA LGBT Center logo" />
                 <p>The LA Lgbt Center</p>
               </a>
               <a href="https://one.usc.edu/" className="desktop__icon">
-                <img src="/img/sponsors/one archives.svg" alt="ONE Archives logo" />
+                <img src="/img/sponsors/one archives.png" alt="ONE Archives logo" />
                 <p>ONE Archives</p>
               </a>
             </div>
