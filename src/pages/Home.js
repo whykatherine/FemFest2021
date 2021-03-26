@@ -1,7 +1,7 @@
 // modules
 import React from 'react';
 // components
-import Gallery from '../Gallery';
+// import Gallery from '../Gallery';
 
 function Home(props) {
   return (
@@ -16,7 +16,7 @@ function Home(props) {
       </div>
 
       <div className="text">
-        <iframe className="spotify" src="https://open.spotify.com/embed/playlist/27YwAmEiOtgthJhSM3eBBT" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe title="Spotify playlist" className="spotify" src="https://open.spotify.com/embed/playlist/27YwAmEiOtgthJhSM3eBBT" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
 
       <div className="text">

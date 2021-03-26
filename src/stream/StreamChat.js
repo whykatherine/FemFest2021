@@ -7,7 +7,8 @@ function StreamChat(props) {
         id="chat_embed"
         src="https://www.twitch.tv/embed/hasanabi/chat?parent=localhost"
         height="500"
-        width="350"></iframe>
+        width="350"
+        title="Twitch stream chat"></iframe>
   );
 }
 

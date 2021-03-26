@@ -1,14 +1,15 @@
 // modules
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
-  let date = new Date();
-  let date_str = date.getHours() + ":" + date.getMinutes();
+  // let date = new Date();
+  // let date_str = date.getHours() + ":" + date.getMinutes();
   return (
     <header className="header">
       <div>
-        <Link to="/"><img className="logo" src="/img/logo.png" /></Link>
+        <Link to="/"><img className="logo" src="/img/logo.png" alt="FemFest logo" /></Link>
         <nav className="nav">
           <ul>
             <li>
