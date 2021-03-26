@@ -5,7 +5,7 @@ function StreamChat(props) {
   return (
     <iframe
         id="chat_embed"
-        src="https://www.twitch.tv/embed/hasanabi/chat?parent=localhost"
+        src="https://www.twitch.tv/embed/hasanabi/chat?parent=femfest.online"
         height="500"
         width="350"
         title="Twitch stream chat"></iframe>
