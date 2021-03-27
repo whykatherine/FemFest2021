@@ -1,7 +1,5 @@
 // modules
 import React from 'react';
-// assets
-import './Marketplace.css';
 
 function Marketplace(props) {
   let vendors = {

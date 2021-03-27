@@ -135,6 +135,7 @@ h1 {
   align-items: stretch;
   justify-content: space-between;
   padding: 0 1em;
+  color: var(--link-color);
 }
 
 .header > div {
@@ -158,12 +159,17 @@ h1 {
   gap: 1em;
 }
 
+.socials ul {
+  gap: 0;
+}
+
 .nav li {
   display: flex;
   align-items: center;
 }
 
-.nav a {
+.nav a,
+#date {
   text-decoration: none;
   height: 100%;
   display: flex;
@@ -171,13 +177,10 @@ h1 {
   padding: 0 .5em;
 }
 
-.nav a:hover {
+.nav a:hover,
+#date:hover {
   background-color: #FE9EE9;
   color: #fff;
-}
-
-.header p {
-  margin: 0;
 }
 
 /* desktop icons */

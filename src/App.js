@@ -8,6 +8,7 @@ import Stream from './stream/Stream';
 import StreamChat from './stream/StreamChat';
   import Home from './pages/Home';
   import Marketplace from './pages/Marketplace';
+  import Merch from './pages/Merch';
   import Library from './pages/Library';
   import VisualArt from './pages/VisualArt';
   import QueerResources from './pages/QueerResources';
@@ -66,6 +67,9 @@ class App extends Component {
               </Route>
               <Route path="/marketplace">
                 <Window title="Marketplace"><Marketplace></Marketplace></Window>
+              </Route>
+              <Route path="/merch">
+                <Window title="Merch"><Merch></Merch></Window>
               </Route>
               <Route path="/library">
                 <Window title="Library"><Library></Library></Window>

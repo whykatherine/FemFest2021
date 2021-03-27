@@ -1,7 +1,5 @@
 // modules
 import React from 'react';
-// assets
-import './VisualArt.css';
 
 function VisualArt(props) {
   return (
@@ -10,13 +8,6 @@ function VisualArt(props) {
       <div className="text">
         <h1 data-content="Visual Art">Visual Art</h1>
       </div>
-
-      {/*<div className="gallery">
-        <div className="art"></div>
-        <div className="art"></div>
-        <div className="art"></div>
-        <div className="art"></div>
-      </div>*/}
 
       <div className="text">
         <p>COMING SOON</p>
