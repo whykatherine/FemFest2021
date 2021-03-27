@@ -31,13 +31,13 @@ function Header(props) {
               <a href="" title="be there or be square :)">
                 <span>4/3/21</span>
               </a>
-              <a href="https://instagram.com/uscfemfest" aria-label="Instagram" title="Instagram">
+              <a href="https://instagram.com/uscfemfest" aria-label="Instagram" title="Instagram" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="https://twitch.tv/femfest" aria-label="Twitch" title="Twitch">
+              <a href="https://twitch.tv/femfest" aria-label="Twitch" title="Twitch" target="_blank" rel="noreferrer">
                 <i className="fab fa-twitch" aria-hidden="true"></i>
               </a>
-              <a href="https://open.spotify.com/playlist/27YwAmEiOtgthJhSM3eBBT?utm_source=embed_v2&go=1&play=1&nd=1" aria-label="Spotify" title="Spotify">
+              <a href="https://open.spotify.com/playlist/27YwAmEiOtgthJhSM3eBBT?utm_source=embed_v2&go=1&play=1&nd=1" aria-label="Spotify" title="Spotify" target="_blank" rel="noreferrer">
                 <i className="fab fa-spotify" aria-hidden="true"></i>
               </a>
             </li>

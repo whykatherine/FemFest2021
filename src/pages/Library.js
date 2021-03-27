@@ -25,9 +25,9 @@ function Library(props) {
         {books.map(book => (
           <div className="library__book" key={book[0]}>
             <div className="book__cover">
-              <a href={book[2]}><img src={book[3]} alt="" /></a>
+              <a href={book[2]} target="_blank" rel="noreferrer" title={book[0]}><img src={book[3]} alt={book[0] + " cover"} /></a>
             </div>
-            <p><a href={book[2]}>{book[0]}</a></p>
+            <p><a href={book[2]} target="_blank" rel="noreferrer" title={book[0]}>{book[0]}</a></p>
             <p>{book[1]}</p>
           </div>
         ))}
