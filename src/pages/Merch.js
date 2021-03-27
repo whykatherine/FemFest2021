@@ -40,7 +40,11 @@ function Merch(props) {
         <h1 data-content="Merch">Merch</h1>
       </div>
 
-      <div className="gallery gallery--merch">
+      <div className="text">
+      	<p>COMING SOON</p>
+      </div>
+
+      {/*<div className="gallery gallery--merch">
         {Object.keys(merch).map(cat => (
         	<div className="gallery_section" key={cat}>
         		{Object.keys(merch[cat]).map(name => (
@@ -50,7 +54,7 @@ function Merch(props) {
       			))}
         	</div>
         ))}
-      </div>
+      </div>*/}
 
     </div>
 	);
