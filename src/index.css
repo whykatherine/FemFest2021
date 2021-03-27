@@ -197,8 +197,8 @@ h1 {
   @media (min-width: 800px) {
     .desktop__icons {
       position: absolute;
-      top: 40px;
-      right: 2%;
+      top: 20px;
+      right: 1%;
       width: 8%;
       flex-direction: column;
       gap: 2em;
