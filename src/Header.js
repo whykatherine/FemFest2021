@@ -1,12 +1,13 @@
 // modules
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './img/logo.png';
 
 function Header(props) {
   return (
     <header className="header">
       <div>
-        <Link to="/"><img className="logo" src="/img/logo.png" alt="FemFest logo" /></Link>
+        <Link to="/"><img className="logo" src={logo} alt="FemFest logo" /></Link>
         <nav className="nav">
           <ul>
             <li>

@@ -67,13 +67,15 @@
   background-color: var(--window-bar-bg-color);
   /* background-color: #DDDDDD; */
   color: var(--window-text-color);
+  /* color: #000; */
   position: sticky;
   top: 0;
   text-align: center;
 }
 
 .window__bar:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('./img/cursor-1.png'), default;
 }
 
 .window__bar h1 {
@@ -104,6 +106,8 @@
   margin: 5em auto;
   text-align: center;
 }
+
+/* gallery */
 
 .gallery {
   /* max-width: 800px; */

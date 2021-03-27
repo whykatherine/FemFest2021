@@ -9,7 +9,6 @@ https://docs.google.com/presentation/d/1NmrN_U9t7qVDccgHuSaNbfMPGQBHHfKb9VcgyZTj
   --link-color: #F57BD1;
   --link-hover-color: #FD2ED7;
   /* window */
-  --window-border-color: #FF00FD;
   --window-bar-bg-color: #2300F4;
   --window-bg-color: #170C52;
   --window-text-color: #fff;
@@ -50,22 +49,21 @@ body {
 
 body {
   font-family: "Krungthep", sans-serif;
-  /* background-color: #FF00FC; */
-  /* background-color: #2513F1; */
-  /* background-color: #000; */
-  /* color: #fff; */
-  /* background-color: #E2EEFE; */
   background-color: var(--bg-color);
   /* https://mybrandnewlogo.com/color-gradient-generator */
   background-image: radial-gradient(circle at 20.12% -14.09%, #00b6e4 0, #00b5f9 3.33%, #00b4ff 6.67%, #00b3ff 10%, #00b0ff 13.33%, #00adff 16.67%, #00a9ff 20%, #00a3ff 23.33%, #009dff 26.67%, #0094ff 30%, #008bff 33.33%, #577fff 36.67%, #9472ff 40%, #bb63ff 43.33%, #da51ff 46.67%, #f23cf2 50%, #ff1edc 53.33%, #ff00c5 56.67%, #ff00ae 60%, #ff0096 63.33%, #ff007e 66.67%, #ff0067 70%, #ff0050 73.33%, #ff1c39 76.67%, #ff391e 80%, #ff4e00 83.33%, #fb5e00 86.67%, #ec6c00 90%, #dc7900 93.33%, #ca8300 96.67%, #b68c00 100%);
   background-size: 33.33%;
+  /* background-image: url(./img/teaser.gif); */
   line-height: 1.5;
+  cursor: url(./img/cursor.png), default;
 }
 
 a {
-  /* color: #99F2F6; */
-  /* color: #FE9EE9; */
   color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
 }
 
 h1,
@@ -126,13 +124,8 @@ h1 {
 }
 
 .header {
-  /* padding: 5em; */
   background-color: #000;
-  color: #fff;
-  /* background-color: #DCDDDC; */
-  text-align: center;
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   padding: 0 1em;
   color: var(--link-color);
@@ -145,27 +138,21 @@ h1 {
 .logo {
   display: block;
   height: 40px;
-  /* width: 500px; */
   margin: auto;
 }
 
 .nav ul {
   margin: 0;
   padding-left: 0;
+  list-style-type: none;
   display: flex;
   justify-content: center;
-  list-style-type: none;
   height: 100%;
   gap: 1em;
 }
 
 .socials ul {
   gap: 0;
-}
-
-.nav li {
-  display: flex;
-  align-items: center;
 }
 
 .nav a,
@@ -196,13 +183,8 @@ h1 {
 }
 
 .desktop__icon {
-  text-decoration: none;
-  color: #000;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  /* width: 100px; */
-  line-height: 1;
   gap: .5em;
   align-items: center;
 }
@@ -210,14 +192,6 @@ h1 {
 .desktop__icon img {
   max-height: 50px;
   max-width: 80%;
-  margin: auto;
-}
-
-.desktop__icon p {
-  margin: 0;
-  background-color: #fff;
-  text-align: center;
-  display: none;
 }
 
   @media (min-width: 800px) {
@@ -233,9 +207,5 @@ h1 {
 
     .desktop__icon {
       width: 100%;
-    }
-
-    .desktop__icon p {
-      display: block;
     }
   }
