@@ -55,7 +55,6 @@ class App extends Component {
               {Object.keys(sponsors).map(s => (
                 <a href={sponsors[s]["link"]} key={s} className="desktop__icon" target="_blank" rel="noreferrer">
                   <img src={"/img/sponsors/" + sponsors[s]["logo"]} alt={s + " logo"} />
-                  <p>{s}</p>
                 </a>
               ))}
             </div>

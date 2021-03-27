@@ -201,14 +201,14 @@ h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100px;
+  /* width: 100px; */
   line-height: 1;
   gap: .5em;
   align-items: center;
 }
 
 .desktop__icon img {
-  max-height: 100px;
+  max-height: 50px;
   max-width: 80%;
   margin: auto;
 }
@@ -223,8 +223,8 @@ h1 {
   @media (min-width: 800px) {
     .desktop__icons {
       position: absolute;
-      top: 50px;
-      right: 5%;
+      top: 40px;
+      right: 2%;
       width: 8%;
       flex-direction: column;
       gap: 2em;
