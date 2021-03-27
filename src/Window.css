@@ -34,22 +34,32 @@
       top: 300px;
       left: 3%;
       width: 55%;
+    }
+
+    .window--main .window__content:not(.hidden) {
       height: 600px;
     }
 
     .window--stream {
       width: 50%;
-      height: 600;
       top: 60px;
       right: 16%;
+    }
+
+    .window--stream .window__content:not(.hidden) {
+      height: 600px;
     }
 
     .window--chat {
       top: 400px;
       right: 17%;
       width: 20%;
+    }
+
+    .window--chat .window__content:not(.hidden) {
       height: 800px;
     }
+
   }
 
 .window__bar {
