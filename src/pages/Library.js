@@ -23,13 +23,14 @@ function Library(props) {
         {books.map(book => (
           <div className="gallery__item" key={book[0]}>
             <div className="gallery__item_image">
-              <a href={book[2]} target="_blank" rel="noreferrer" title={book[0]}><img src={book[3]} alt={book[0] + " cover"} /></a>
+              <a href={book[2]} target="_blank" rel="noreferrer"><img src={book[3]} alt={book[0] + " cover"} /></a>
             </div>
-            <p><a href={book[2]} target="_blank" rel="noreferrer" title={book[0]}>{book[0]}</a></p>
+            <p><a href={book[2]} target="_blank" rel="noreferrer">{book[0]}</a></p>
             <p>{book[1]}</p>
           </div>
         ))}
       </div>
+      
     </div>
   );
 }

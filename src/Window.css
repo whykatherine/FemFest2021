@@ -119,6 +119,7 @@
   height: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .gallery__item_image img {
