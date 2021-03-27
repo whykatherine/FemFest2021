@@ -26,7 +26,11 @@ function Marketplace(props) {
         <h1 data-content="Marketplace">Marketplace</h1>
       </div>
 
-      {Object.keys(vendors).map(vendor => (
+      <div className="text">
+        <p>COMING SOON</p>
+      </div>
+
+      {/*{Object.keys(vendors).map(vendor => (
         <div className="vendor" key={vendor}>
           <p>{vendor}</p>
           <p>{vendors[vendor]["description"]}</p>
@@ -40,7 +44,7 @@ function Marketplace(props) {
             ))}
           </div>
         </div>
-      ))}
+      ))}*/}
     </div>
   );
 }

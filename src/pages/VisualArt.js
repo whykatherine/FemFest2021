@@ -11,11 +11,15 @@ function VisualArt(props) {
         <h1 data-content="Visual Art">Visual Art</h1>
       </div>
 
-      <div className="gallery">
+      {/*<div className="gallery">
         <div className="art"></div>
         <div className="art"></div>
         <div className="art"></div>
         <div className="art"></div>
+      </div>*/}
+
+      <div className="text">
+        <p>COMING SOON</p>
       </div>
     </div>
   );

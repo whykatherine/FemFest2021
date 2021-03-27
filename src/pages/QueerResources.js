@@ -10,7 +10,7 @@ function QueerResources(props) {
       </div>
 
       <div className="text">
-        <p>content</p>
+        <p>COMING SOON</p>
       </div>
     </div>
   );
