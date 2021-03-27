@@ -1,9 +1,0 @@
-.gallery {
-  /* max-width: 800px; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 100px;
-  /* margin: auto; */
-  text-align: center;
-  margin-bottom: 2em;
-}

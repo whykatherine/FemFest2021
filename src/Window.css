@@ -104,3 +104,23 @@
   margin: 5em auto;
   text-align: center;
 }
+
+.gallery {
+  /* max-width: 800px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 100px;
+  /* margin: auto; */
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.gallery__item_image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.gallery__item_image img {
+  max-width: 100%;
+}

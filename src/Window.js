@@ -35,7 +35,7 @@ class Window extends Component {
 
   handleDrag(event) {
     console.log(event);
-    this.focus();
+    // this.focus();
   }
 }
 

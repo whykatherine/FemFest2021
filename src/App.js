@@ -16,31 +16,31 @@ class App extends Component {
   render() {
     let sponsors = {
       "USC Student Assembly for Gender Empowerment": {
-        "filename": "sage.png",
+        "logo": "sage.png",
         "link": "https://www.facebook.com/SAGEUSC/"
       },
       "USC Visions & Voices": {
-        "filename": "v&v.jpg",
+        "logo": "v&v.jpg",
         "link": "https://visionsandvoices.usc.edu/"
       },
       "Los Angeles LGBT Center": {
-        "filename": "lgbt-center.png",
+        "logo": "lgbt-center.png",
         "link": "https://lalgbtcenter.org/"
       },
       "USC Undergraduate Student Government": {
-        "filename": "usg.jpg",
+        "logo": "usg.jpg",
         "link":  "https://usg.usc.edu/"
       },
       "USC Thornton School of Music": {
-        "filename": "thornton.jpg",
+        "logo": "thornton.jpg",
         "link":  "https://music.usc.edu/"
       },
       "USC Asian Pacific American Student Assembly": {
-        "filename": "apasa.png",
+        "logo": "apasa.png",
         "link":  "https://www.uscapasa.com/"
       },
       "USC Latinx Student Assembly": {
-        "filename": "lsa.png",
+        "logo": "lsa.png",
         "link":  "https://usclsa.org/"
       }
     };
@@ -53,7 +53,7 @@ class App extends Component {
             <div className="desktop__icons">
               {Object.keys(sponsors).map(s => (
                 <a href={sponsors[s]["link"]} key={s} className="desktop__icon" target="_blank" rel="noreferrer">
-                  <img src={"/img/sponsors/" + sponsors[s]["filename"]} alt={s + " logo"} />
+                  <img src={"/img/sponsors/" + sponsors[s]["logo"]} alt={s + " logo"} />
                   <p>{s}</p>
                 </a>
               ))}
