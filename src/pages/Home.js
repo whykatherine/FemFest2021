@@ -10,10 +10,6 @@ function Home(props) {
       <div className="text">
         <h1 data-content="FEMFEST 2021">FEMFEST 2021</h1>
       </div>
-      
-      <div className="text">
-        <p>COMING SOON</p>
-      </div>
 
       <div className="text">
         <iframe title="Spotify playlist" className="spotify" src="https://open.spotify.com/embed/playlist/27YwAmEiOtgthJhSM3eBBT" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
