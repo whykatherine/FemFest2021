@@ -4,20 +4,20 @@ import React from 'react';
 import './Marketplace.css';
 
 function Marketplace(props) {
-  let vendors = {
-    "Artist 1": {
-      "description": "Description of artist",
-      "items": [["Item 1", 24.95], ["Item 2", 9.99]]
-    },
-    "Vendor 1": {
-      "description": "Description of vendor",
-      "items": [["Item 1", 12.50], ["Item 2", 6.00], ["Item 3", 3.50]]
-    },
-    "Artist 2": {
-      "description": "A description of this artist",
-      "items": [["Item 1", 20.00], ["Item 2", 15.00], ["Item 3", 9.99]]
-    }
-  };
+  // let vendors = {
+  //   "Artist 1": {
+  //     "description": "Description of artist",
+  //     "items": [["Item 1", 24.95], ["Item 2", 9.99]]
+  //   },
+  //   "Vendor 1": {
+  //     "description": "Description of vendor",
+  //     "items": [["Item 1", 12.50], ["Item 2", 6.00], ["Item 3", 3.50]]
+  //   },
+  //   "Artist 2": {
+  //     "description": "A description of this artist",
+  //     "items": [["Item 1", 20.00], ["Item 2", 15.00], ["Item 3", 9.99]]
+  //   }
+  // };
 
   return (
     <div className="marketplace">

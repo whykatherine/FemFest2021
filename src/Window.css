@@ -32,7 +32,7 @@
 
     .window--main {
       top: 300px;
-      left: 5%;
+      left: 3%;
       width: 55%;
       height: 600px;
     }
@@ -41,12 +41,12 @@
       width: 50%;
       height: 600;
       top: 60px;
-      right: 20%;
+      right: 16%;
     }
 
     .window--chat {
       top: 400px;
-      right: 8%;
+      right: 17%;
       width: 20%;
       height: 800px;
     }
@@ -60,6 +60,10 @@
   position: sticky;
   top: 0;
   text-align: center;
+}
+
+.window__bar:hover {
+  cursor: pointer;
 }
 
 .window__bar h1 {
