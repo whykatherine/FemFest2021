@@ -21,7 +21,7 @@ function Library(props) {
         <h1 data-content="Library">Library</h1>
       </div>
 
-      <div className="gallery">
+      <div className="gallery gallery--library">
         {books.map(book => (
           <div className="library__book" key={book[0]}>
             <div className="book__cover">
