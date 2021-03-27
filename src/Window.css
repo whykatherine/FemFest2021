@@ -27,20 +27,11 @@
       margin: 0;
     }
 
-    .window--main {
-      top: 20px;
-      left: 3%;
-      width: 55%;
-    }
-
     .window--main .window__content:not(.hidden) {
       height: 600px;
     }
 
     .window--stream {
-      width: 50%;
-      top: 480px;
-      right: 9%;
       z-index: 2;
     }
 
@@ -48,16 +39,9 @@
       height: 600px;
     }
 
-    .window--chat {
-      top: 50px;
-      right: 15%;
-      width: 20%;
-    }
-
     .window--chat .window__content:not(.hidden) {
       height: 350px;
     }
-
   }
 
 .window__bar {
@@ -67,17 +51,11 @@
   top: 0;
   text-align: center;
   z-index: 2;
+  cursor: move;
 }
 
-.window__bar:hover {
-  cursor: url('./img/cursor-1.png'), pointer;
-}
-
-.window__bar h1 {
-  font-size: 1em;
-  font-weight: normal;
-  margin: 0;
-  font-family: "Krungthep", sans-serif;
+.window__bar_title {
+  cursor: row-resize;
 }
 
 .window__content {

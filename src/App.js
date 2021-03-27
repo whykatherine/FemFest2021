@@ -58,8 +58,8 @@ class App extends Component {
                 </a>
               ))}
             </div>
-            <Window title="Stream" windowClass="window--stream"><Stream></Stream></Window>
-            <Window title="Chat" windowClass="window--chat"><StreamChat></StreamChat></Window>
+            <Window title="Stream" windowClass="window--stream" top="480px" left="40%" width="50%"><Stream></Stream></Window>
+            <Window title="Chat" windowClass="window--chat" top="50px" left="63%" width="20%"><StreamChat></StreamChat></Window>
             <Switch>
               <Route exact path="/">
                 <Window title="Home"><Home></Home></Window>
