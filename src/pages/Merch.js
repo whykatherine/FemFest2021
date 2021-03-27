@@ -46,7 +46,8 @@ function Merch(props) {
 
       {/*<div className="gallery gallery--merch">
         {Object.keys(merch).map(cat => (
-        	<div className="gallery_section" key={cat}>
+        	<div className="gallery__section" key={cat}>
+        		<h2 className="gallery__section_title">{cat}</h2>
         		{Object.keys(merch[cat]).map(name => (
         			<div className="gallery__item" key={name}>
 		            <p>{name}</p>
