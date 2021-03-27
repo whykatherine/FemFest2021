@@ -121,6 +121,8 @@ h1 {
 .container {
   position: relative;
   min-height: 150vh;
+  max-width: 100%;
+  margin: 2em 0;
 }
 
 .header {
@@ -183,9 +185,11 @@ h1 {
 .desktop__icons {
   display: flex;
   flex-direction: row;
-  gap: 2em;
-  margin: 0em;
+  gap: .5em;
+  margin: 2em .5em;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
 }
 
 .desktop__icon {
@@ -197,6 +201,7 @@ h1 {
   width: 100px;
   line-height: 1;
   gap: .5em;
+  align-items: center;
 }
 
 .desktop__icon img {
@@ -208,6 +213,8 @@ h1 {
 .desktop__icon p {
   margin: 0;
   background-color: #fff;
+  text-align: center;
+  display: none;
 }
 
   @media (min-width: 800px) {
@@ -218,9 +225,14 @@ h1 {
       width: 8%;
       flex-direction: column;
       gap: 2em;
+      margin: 0;
     }
 
     .desktop__icon {
       width: 100%;
+    }
+
+    .desktop__icon p {
+      display: block;
     }
   }
