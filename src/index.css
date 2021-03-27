@@ -64,7 +64,7 @@ a {
 
 a:hover {
   color: var(--link-hover-color);
-  cursor: url(./img/cursor-1.png), default;
+  cursor: url(./img/cursor-1.png), pointer;
 }
 
 h1,
