@@ -2,36 +2,36 @@
 import React from 'react';
 
 function Merch(props) {
-	let merch = {
-		"headline": {
-			"Caroline Polachek": {},
-			"Dorian Electra": {},
-			"Raveena": {}
-		},
-		"supporting": {
-			"Yves Tumor": {},
-			"Eartheater": {},
-			"Fraxiom": {},
-			"Caro♥": {}
-		},
-		"speakers": {
-			"Mykki Blanco": {},
-			"Funmilola Fagbamila": {}
-		},
-		"performers": {
-			"Vander Von Odd": {},
-			"Abhora": {},
-			"Freckle": {}
-		},
-		"designers": {
-			"Nina Doll": {},
-			"Marco Alcala": {},
-			"Hana Pua": {},
-			"Kris Yuan": {},
-			"Shroonchu": {},
-			"Aylish Turner": {}
-		}
-	};
+	// let merch = {
+	// 	"headline": {
+	// 		"Caroline Polachek": {},
+	// 		"Dorian Electra": {},
+	// 		"Raveena": {}
+	// 	},
+	// 	"supporting": {
+	// 		"Yves Tumor": {},
+	// 		"Eartheater": {},
+	// 		"Fraxiom": {},
+	// 		"Caro♥": {}
+	// 	},
+	// 	"speakers": {
+	// 		"Mykki Blanco": {},
+	// 		"Funmilola Fagbamila": {}
+	// 	},
+	// 	"performers": {
+	// 		"Vander Von Odd": {},
+	// 		"Abhora": {},
+	// 		"Freckle": {}
+	// 	},
+	// 	"designers": {
+	// 		"Nina Doll": {},
+	// 		"Marco Alcala": {},
+	// 		"Hana Pua": {},
+	// 		"Kris Yuan": {},
+	// 		"Shroonchu": {},
+	// 		"Aylish Turner": {}
+	// 	}
+	// };
 
 	return (
 		<div className="marketplace">
