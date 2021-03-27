@@ -1,11 +1,8 @@
 // modules
 import React from 'react';
-// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
-  // let date = new Date();
-  // let date_str = date.getHours() + ":" + date.getMinutes();
   return (
     <header className="header">
       <div>
@@ -28,17 +25,19 @@ function Header(props) {
         </nav>
       </div>
       <div>
-        {/*<span>{date_str}</span>*/}
         <nav className="nav socials">
           <ul>
             <li>
-              <a href="https://instagram.com/uscfemfest" aria-label="Instagram">
+              <a href="" title="be there or be square :)">
+                <span>4/3/21</span>
+              </a>
+              <a href="https://instagram.com/uscfemfest" aria-label="Instagram" title="Instagram">
                 <i className="fab fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="https://twitch.tv/femfest" aria-label="Twitch">
+              <a href="https://twitch.tv/femfest" aria-label="Twitch" title="Twitch">
                 <i className="fab fa-twitch" aria-hidden="true"></i>
               </a>
-              <a href="https://open.spotify.com/playlist/27YwAmEiOtgthJhSM3eBBT?utm_source=embed_v2&go=1&play=1&nd=1" aria-label="Spotify">
+              <a href="https://open.spotify.com/playlist/27YwAmEiOtgthJhSM3eBBT?utm_source=embed_v2&go=1&play=1&nd=1" aria-label="Spotify" title="Spotify">
                 <i className="fab fa-spotify" aria-hidden="true"></i>
               </a>
             </li>
