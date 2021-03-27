@@ -11,7 +11,6 @@ import StreamChat from './stream/StreamChat';
   import Library from './pages/Library';
   import VisualArt from './pages/VisualArt';
   import QueerResources from './pages/QueerResources';
-  import ArchiveProjects from './pages/ArchiveProjects';
 
 class App extends Component {
   render() {
@@ -52,22 +51,12 @@ class App extends Component {
           <Header></Header>
           <div className="container">
             <div className="desktop__icons">
-
               {Object.keys(sponsors).map(s => (
                 <a href={sponsors[s]["link"]} key={s} className="desktop__icon">
                   <img src={"/img/sponsors/" + sponsors[s]["filename"]} alt={s + " logo"} />
                   <p>{s}</p>
                 </a>
               ))}
-              
-              {/*<a href="https://lalgbtcenter.org/" className="desktop__icon">
-                <img src="/img/sponsors/lgbt-center.png" alt="Los Angeles LGBT Center logo" />
-                <p>Los Angeles Lgbt Center</p>
-              </a>
-              <a href="https://one.usc.edu/" className="desktop__icon">
-                <img src="/img/sponsors/one-archives.png" alt="ONE Archives logo" />
-                <p>ONE Archives</p>
-              </a>*/}
             </div>
             <Window title="Stream" windowClass="window--stream"><Stream></Stream></Window>
             <Window title="Chat" windowClass="window--chat"><StreamChat></StreamChat></Window>
@@ -86,9 +75,6 @@ class App extends Component {
               </Route>
               <Route path="/queer-resources">
                 <Window title="Queer Resources"><QueerResources></QueerResources></Window>
-              </Route>
-              <Route path="/archive-projects">
-                <Window title="Archive Projects"><ArchiveProjects></ArchiveProjects></Window>
               </Route>
             </Switch>
           </div>

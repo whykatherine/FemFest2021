@@ -24,9 +24,6 @@ function Header(props) {
             <li>
               <Link to="/queer-resources">Queer Resources</Link>
             </li>
-            <li>
-              <Link to="/archive-projects">Archive Projects</Link>
-            </li>
           </ul>
         </nav>
       </div>
