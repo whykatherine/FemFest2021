@@ -58,11 +58,7 @@
 }
 
   @media (min-width: 800px) {
-    .window_bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
+    .window__bar {
       cursor: move;
     }
   }
