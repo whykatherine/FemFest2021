@@ -9,7 +9,10 @@
 }
   @media (max-width: 800px) {
     .window {
-      width: 90%;
+      position: relative;
+      top: auto !important;
+      left: auto !important;
+      width: 90% !important;
     }
   }
 
@@ -48,12 +51,21 @@
   /* top: 0; */
   text-align: center;
   /* z-index: 1; */
-  cursor: move;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
+  @media (min-width: 800px) {
+    .window_bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      cursor: move;
+    }
+  }
 
 .window__bar_title {
   cursor: row-resize;

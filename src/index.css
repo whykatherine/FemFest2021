@@ -76,14 +76,15 @@ h6 {
   font-weight: 400;
   font-style: normal;
   color: var(--heading-color);
-  width: max-content;
-  margin: auto;
-  position: relative;
-  z-index: 0;
-  letter-spacing: 5px;
+  /* width: max-content; */
+  /* margin: auto; */
+  /* position: relative; */
+  /* z-index: 0; */
+  /* letter-spacing: 5px; */
+  line-height: 1;
 }
 
-h1::before,
+/* h1::before,
 h2::before,
 h3::before,
 h4::before,
@@ -109,7 +110,7 @@ h6::after {
   width: max-content;
   color: #f36;
   z-index: -1;
-}
+} */
 
 h1 {
   text-align: center;

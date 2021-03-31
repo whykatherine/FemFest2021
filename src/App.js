@@ -17,7 +17,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "order": ["window--stream", "window--chat", "window--main"]
+      "order": ["window--main", "window--stream", "window--chat"]
     }
     this.handleReorder = this.handleReorder.bind(this);
 
