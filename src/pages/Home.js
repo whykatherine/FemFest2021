@@ -1,7 +1,6 @@
 // modules
 import React from 'react';
 // components
-// import Gallery from '../Gallery';
 
 function Home(props) {
   return (
@@ -21,12 +20,6 @@ function Home(props) {
         <p>This year, due to the novel coronavirus, Femfest will be held online. This unprecedented opportunity gives our committee the chance to create a new experience for the USC community. Not just a music festival, Femfest will strive to entertain, educate and empower those who oppose the patriarchy.</p>
         <p>Watch this space for ways to engage with Femfest and for event updates.</p>
       </div>
-
-      {/*<Gallery
-        img_dir="/img/2020/costume-contest"
-        title="Costume Contest 2020"
-        description="A challenge to Instagram on spooky season.">
-      </Gallery>*/}
       
     </div>
   );
