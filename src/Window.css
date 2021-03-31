@@ -1,6 +1,7 @@
 .window {
   border: 5px solid var(--window-bar-bg-color);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  overflow-y: hidden;
   box-shadow: 1px 1px 5px var(--window-bar-bg-color);
   background-color: var(--window-bg-color);
   color: var(--window-text-color);
@@ -31,10 +32,6 @@
       height: 600px;
     }
 
-    .window--stream {
-      z-index: 2;
-    }
-
     .window--stream .window__content:not(.hidden) {
       height: 600px;
     }
@@ -47,11 +44,15 @@
 .window__bar {
   background-color: var(--window-bar-bg-color);
   color: var(--window-text-color);
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   text-align: center;
-  z-index: 2;
+  /* z-index: 1; */
   cursor: move;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .window__bar_title {
@@ -61,12 +62,13 @@
 .window__content {
   padding: 2em;
   height: 400px;
+  overflow-y: scroll;
   transition: 0.2s height ease-in-out, 0.2s margin-top ease-in-out;
 }
 
 .hidden {
   height: 0;
-  margin-top: -66px;
+  margin-top: -40px;
 }
 
 .text {
