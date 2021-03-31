@@ -61,7 +61,8 @@ a {
   color: var(--link-color);
 }
 
-a:hover {
+a:hover,
+.menuIcon:hover {
   color: var(--link-hover-color);
   cursor: url(./img/cursor-1.png), pointer;
 }
@@ -122,53 +123,6 @@ h1 {
   min-height: 150vh;
   max-width: 100%;
   margin: 2em 0;
-}
-
-.header {
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1em;
-  color: var(--link-color);
-}
-
-.header > div {
-  display: flex;
-}
-
-.logo {
-  display: block;
-  height: 40px;
-  margin: auto;
-}
-
-.nav ul {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  gap: 1em;
-}
-
-.socials ul {
-  gap: 0;
-}
-
-.nav a,
-#date {
-  text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 .5em;
-}
-
-.nav a:hover,
-#date:hover {
-  background-color: #FE9EE9;
-  color: #fff;
 }
 
 /* desktop icons */
