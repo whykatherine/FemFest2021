@@ -48,7 +48,7 @@ body {
 }
 
 body {
-  font-family: "Krungthep", sans-serif;
+  font-family: "Krungthep", "ChicagoFLFRegular", sans-serif;
   background-color: var(--bg-color);
   /* https://mybrandnewlogo.com/color-gradient-generator */
   background-image: radial-gradient(circle at 20.12% -14.09%, #00b6e4 0, #00b5f9 3.33%, #00b4ff 6.67%, #00b3ff 10%, #00b0ff 13.33%, #00adff 16.67%, #00a9ff 20%, #00a3ff 23.33%, #009dff 26.67%, #0094ff 30%, #008bff 33.33%, #577fff 36.67%, #9472ff 40%, #bb63ff 43.33%, #da51ff 46.67%, #f23cf2 50%, #ff1edc 53.33%, #ff00c5 56.67%, #ff00ae 60%, #ff0096 63.33%, #ff007e 66.67%, #ff0067 70%, #ff0050 73.33%, #ff1c39 76.67%, #ff391e 80%, #ff4e00 83.33%, #fb5e00 86.67%, #ec6c00 90%, #dc7900 93.33%, #ca8300 96.67%, #b68c00 100%);
