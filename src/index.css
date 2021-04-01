@@ -77,47 +77,28 @@ h6 {
   font-weight: 400;
   font-style: normal;
   color: var(--heading-color);
-  /* width: max-content; */
-  /* margin: auto; */
-  /* position: relative; */
-  /* z-index: 0; */
-  /* letter-spacing: 5px; */
   line-height: 1;
   text-align: center;
+  margin-bottom: 2.5em;
 }
-
-/* h1::before,
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before {
-  content: attr(data-content);
-  position: absolute;
-  left: -.1em;
-  width: max-content;
-  color: #fff;
-  z-index: -1;
-}
-
-h1::after,
-h2::after,
-h3::after,
-h4::after,
-h5::after,
-h6::after {
-  content: attr(data-content);
-  position: absolute;
-  left: .1em;
-  width: max-content;
-  color: #f36;
-  z-index: -1;
-} */
 
 h1 {
-  text-align: center;
-  margin-bottom: 3em;
+  font-size: 1.5rem;
 }
+
+h2 {
+  font-size: 1.2rem;
+}
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
 
 .container {
   position: relative;
