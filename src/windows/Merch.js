@@ -42,10 +42,6 @@ function Merch(props) {
 			}
 		},
 		"Performers": {
-			"Vander Von Odd": {
-				"logo": "vander-van-odd.jpg",
-				"link": "https://www.vandervonodd.com/shop"
-			},
 			"Abhora": {
 				"logo": "abhora.jpg",
 				"link": "https://www.etsy.com/shop/Abhora"
