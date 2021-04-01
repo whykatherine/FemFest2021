@@ -4,15 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // components
 import Header from './Header';
 import Window from './Window';
-import Stream from './stream/Stream';
-import StreamChat from './stream/StreamChat';
-import Playlist from './Playlist';
-import Home from './pages/Home';
-import Marketplace from './pages/Marketplace';
-import Merch from './pages/Merch';
-import Library from './pages/Library';
-import VisualArt from './pages/VisualArt';
-import QueerResources from './pages/QueerResources';
+import Stream from './windows/Stream';
+import StreamChat from './windows/StreamChat';
+import Playlist from './windows/Playlist';
+import Home from './windows/Home';
+import Marketplace from './windows/Marketplace';
+import Merch from './windows/Merch';
+import Library from './windows/Library';
+import VisualArt from './windows/VisualArt';
+import QueerResources from './windows/QueerResources';
 
 class App extends Component {
   constructor(props) {
