@@ -1,6 +1,7 @@
 // modules
 import React from 'react';
-// components
+// assets
+import lineup from '../img/FINAL v1_00000.png';
 
 function Home(props) {
   return (
@@ -10,8 +11,12 @@ function Home(props) {
         <h1 data-content="FEMFEST 2021">FEMFEST 2021</h1>
       </div>
 
-      <div className="text">
+      {/*<div className="text">
         <iframe title="Spotify playlist" className="spotify" src="https://open.spotify.com/embed/playlist/27YwAmEiOtgthJhSM3eBBT" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>*/}
+
+      <div className="image">
+        <img src={lineup} alt="FemFest 2021 lineup" />
       </div>
 
       <div className="text">
