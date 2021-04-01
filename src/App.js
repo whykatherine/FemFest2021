@@ -70,7 +70,7 @@ class App extends Component {
                 title="Chat"
                 windowClass="window--chat"
                 top="50px"
-                left="63%"
+                left="68%"
                 width="20%">
           <StreamChat />
         </Window>
@@ -79,7 +79,7 @@ class App extends Component {
         <Window handleReorder={this.handleReorder}
                 title="Playlist"
                 windowClass="window--playlist"
-                top="600px"
+                top="650px"
                 left="10%"
                 width="24%">
           <Playlist />
