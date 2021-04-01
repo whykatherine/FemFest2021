@@ -1,7 +1,5 @@
 // modules
 import React from 'react';
-// assets
-import Window from '../Window.js';
 
 function Marketplace(props) {
   let vendors = {

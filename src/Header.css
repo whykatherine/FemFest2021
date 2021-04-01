@@ -71,7 +71,6 @@
       flex-direction: row;
       justify-content: center;
       gap: 1em;
-      z-index: 0;
     }
 
     .nav--socials ul {
