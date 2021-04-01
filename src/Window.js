@@ -9,9 +9,7 @@ class Window extends Component {
     super(props);
     this.state = {
       "isHidden": false,
-      "left": props.left || "20px",
-      "top": props.top || "20px",
-      "width": props.width || "55%"
+      "isMaximized": false
     }
     this.windowClass = this.props.windowClass || "window--main";
     this.pos = [0, 0, 0, 0];
@@ -21,11 +19,22 @@ class Window extends Component {
     this.closeDragElement = this.closeDragElement.bind(this);
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        isMaximized: true
+      });
+    }, this.props.delay);
+  }
+
   render() {
     return (
-      <div className={"window " + this.windowClass}
-           style={{left: this.state.left, top: this.state.top, width: this.state.width}}>
-        <div className={"window__content" + ((this.state.isHidden) ? " hidden" : "")}>
+      <div className={
+        "window "
+        + this.windowClass
+        + ((this.state.isMaximized) ? " maximized" : "")
+        + ((this.state.isHidden) ? " hidden" : "")}>
+        <div className="window__content">
           {this.props.children}
         </div>
         <div className="window__bar" onMouseDown={this.handleMouseDown}>

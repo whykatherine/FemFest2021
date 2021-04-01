@@ -6,6 +6,7 @@
   color: var(--window-text-color);
   margin: 2em auto;
 }
+
   @media (max-width: 800px) {
     .window {
       position: relative;
@@ -24,21 +25,71 @@
     .window {
       position: absolute;
       margin: 0;
+      top: calc(20px + calc(600px * 0.5));
+      left: calc(20px + calc(55% * 0.5));
+      width: 0;
+      height: 0;
+      /* easeInOutBack */
+      transition: all .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+      /* transition: all .5s ease-in-out; */
     }
 
-    .window--main .window__content:not(.hidden) {
+    /* .hidden {
+      transition: all .5s ease-in-out;
+    } */
+
+    .window--main.maximized {
+      top: 20px;
+      left: 20px;
+      width: 55%;
+    }
+
+    .window--main.maximized:not(.hidden) {
       height: 600px;
     }
 
-    .window--stream .window__content:not(.hidden) {
+    .window--stream {
+      top: calc(480px + calc(420px * 0.5));
+      left: calc(40% + calc(50% * 0.5));
+    }
+
+    .window--stream.maximized {
+      top: 480px;
+      left: 40%;
+      width: 50%;
+    }
+
+    .window--stream.maximized:not(.hidden) {
       height: 420px;
     }
 
-    .window--chat .window__content:not(.hidden) {
+    .window--chat {
+      top: calc(50px + calc(540px * 0.5));
+      left: calc(68% + calc(20% * 0.5));
+    }
+
+    .window--chat.maximized {
+      top: 50px;
+      left: 68%;
+      width: 20%;
+    }
+
+    .window--chat.maximized:not(.hidden) {
       height: 540px;
     }
 
-    .window--playlist .window__content:not(.hidden) {
+    .window--playlist {
+      top: calc(650px + calc(420px * 0.5));
+      left: calc(10% + calc(24% * 0.5));
+    }
+
+    .window--playlist.maximized {
+      top: 650px;
+      left: 10%;
+      width: 24%;
+    }
+
+    .window--playlist.maximized:not(.hidden) {
       height: 420px;
     }
   }
@@ -65,9 +116,10 @@
 
 .window__content {
   padding: 2em;
-  height: 400px;
+  /* height: 400px; */
+  height: 100%;
   overflow-y: scroll;
-  transition: 0.2s height ease-in-out, 0.2s margin-top ease-in-out;
+  /* transition: 0.2s height ease-in-out, 0.2s margin-top ease-in-out; */
 }
 
   @media (min-width: 800px) {
@@ -81,6 +133,10 @@
   }
 
 .hidden {
+  height: 2em;
+}
+
+.hidden .window__content {
   height: 0;
   margin-top: -40px;
 }

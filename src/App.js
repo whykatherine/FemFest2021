@@ -59,9 +59,7 @@ class App extends Component {
         <Window handleReorder={this.handleReorder}
                 title="Stream"
                 windowClass="window--stream"
-                top="480px"
-                left="40%"
-                width="50%">
+                delay={200}>
           <Stream />
         </Window>
       ),
@@ -69,9 +67,7 @@ class App extends Component {
         <Window handleReorder={this.handleReorder}
                 title="Chat"
                 windowClass="window--chat"
-                top="50px"
-                left="68%"
-                width="20%">
+                delay={400}>
           <StreamChat />
         </Window>
       ),
@@ -79,9 +75,7 @@ class App extends Component {
         <Window handleReorder={this.handleReorder}
                 title="Playlist"
                 windowClass="window--playlist"
-                top="650px"
-                left="10%"
-                width="24%">
+                delay={600}>
           <Playlist />
         </Window>
       ),
@@ -89,37 +83,43 @@ class App extends Component {
         <Switch>
           <Route exact path="/">
             <Window handleReorder={this.handleReorder}
-                    title="Home">
+                    title="Home"
+                    delay={0}>
               <Home />
             </Window>
           </Route>
           <Route path="/marketplace">
             <Window handleReorder={this.handleReorder}
-                    title="Marketplace">
+                    title="Marketplace"
+                    delay={0}>
               <Marketplace />
             </Window>
           </Route>
           <Route path="/merch">
             <Window handleReorder={this.handleReorder}
-                    title="Merch">
+                    title="Merch"
+                    delay={0}>
               <Merch />
             </Window>
           </Route>
           <Route path="/library">
             <Window handleReorder={this.handleReorder}
-                    title="Library">
+                    title="Library"
+                    delay={0}>
               <Library />
             </Window>
           </Route>
           <Route path="/visual-art">
             <Window handleReorder={this.handleReorder}
-                    title="Visual Art">
+                    title="Visual Art"
+                    delay={0}>
               <VisualArt />
             </Window>
           </Route>
           <Route path="/queer-resources">
             <Window handleReorder={this.handleReorder}
-                    title="Queer Resources">
+                    title="Queer Resources"
+                    delay={0}>
               <QueerResources />
             </Window>
           </Route>
