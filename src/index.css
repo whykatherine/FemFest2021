@@ -61,8 +61,7 @@ a {
   color: var(--link-color);
 }
 
-a:hover,
-.menuIcon:hover {
+a:hover {
   color: var(--link-hover-color);
   cursor: url(./img/cursor-1.png), pointer;
 }

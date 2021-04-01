@@ -17,60 +17,72 @@
 }
 
 .nav ul {
-  display: none;
-}
-
-  @media (min-width: 1200px) {
-    .nav ul {
-      margin: 0;
-      padding-left: 0;
-      list-style-type: none;
-      display: flex;
-    }
-  }
-
-.menuOpen ul {
-  margin: 0;
-  padding-left: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1em;
-  z-index: 1;
-  margin-top: 40px;
   background-color: #000;
-  width: 50%;
-  height: 100%;
 }
 
-.header div:nth-of-type(2) ul {
-  left: 50%;
-}
-
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     .nav ul {
-      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1em;
+      z-index: 1;
+      width: 50%;
       height: 100%;
-      gap: 1em;
+      left: 100%;
+      margin-top: 40px;
+      transition: .25s left ease-in-out;
     }
   }
 
-.socials ul {
+  @media (min-width: 1200px) {
+    .nav ul {
+      flex-direction: row;
+      position: relative;
+      margin: 0;
+      z-index: 0;
+      padding: 0;
+    }
+  }
+
+.nav--socials ul {
   gap: 0;
 }
 
-.socials i {
+.nav--socials i {
   font-size: 2em;
 }
 
   @media (min-width: 1200px) {
-    .socials i {
+    .nav--socials i {
       font-size: 1em;
     }
   }
+
+@media (max-width: 1200px) {
+  .nav--socials ul {
+    left: 100%;
+  }
+
+  .menuOpen .nav--main ul {
+    left: 0;
+  }
+
+  .menuOpen .nav--socials ul {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav ul {
+    justify-content: center;
+    height: 100%;
+    gap: 1em;
+  }
+}
 
 .nav a,
 #date {
@@ -113,6 +125,7 @@
   font-size: 1em;
   width: 2.5em;
   display: block;
+  cursor: url(./img/cursor-1.png), pointer;
 }
   
   @media (min-width: 1200px) {

@@ -19,7 +19,7 @@ class Header extends Component {
       <header className={"header " + ((this.state.menuIsOpen) ? "menuOpen" : "")}>
         <div>
           <Link to="/"><img className="logo" src={logo} alt="FemFest logo" /></Link>
-          <nav className="nav">
+          <nav className="nav nav--main">
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -43,7 +43,7 @@ class Header extends Component {
           </nav>
         </div>
         <div>
-          <nav className="nav socials">
+          <nav className="nav nav--socials">
             <ul>
               <li id="date">
                 <span title="be there or be square :)">4/3/21</span>
@@ -86,7 +86,7 @@ class Header extends Component {
           </nav>
         </div>
         <button className="menuIcon" onClick={this.toggleMenu}>
-          <i className="fas fa-bars" aria-hidden="true"></i>
+          <i className={"fas " + ((this.state.menuIsOpen) ? "fa-times" : "fa-bars")} aria-hidden="true"></i>
         </button>
       </header>
     );
