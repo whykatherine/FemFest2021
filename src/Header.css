@@ -6,6 +6,7 @@
   color: var(--link-color);
 }
 
+  /* mobile */
   @media (max-width: 1200px) {
     .header {
       position: fixed;
@@ -31,6 +32,7 @@
   background-color: #000;
 }
 
+  /* mobile */
   @media (max-width: 1200px) {
     .nav ul {
       flex-direction: column;
@@ -45,56 +47,39 @@
       margin-top: 40px;
       transition: .25s left ease-in-out;
     }
+
+    .menuOpen .nav--main ul {
+      left: 0;
+    }
+
+    .menuOpen .nav--socials ul {
+      left: 50%;
+    }
+
+    .nav--socials i {
+      font-size: 2em;
+    }
   }
 
+  /* desktop */
   @media (min-width: 1200px) {
     .nav ul {
-      flex-direction: row;
+      height: 100%;
       position: relative;
       margin: 0;
-      z-index: 0;
       padding: 0;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1em;
+      z-index: 0;
+    }
+
+    .nav--socials ul {
+      gap: 0;
     }
   }
 
-.nav--socials i {
-  font-size: 2em;
-}
-
-  @media (min-width: 1200px) {
-    .nav--socials i {
-      font-size: 1em;
-    }
-  }
-
-@media (max-width: 1200px) {
-  .nav--socials ul {
-    left: 100%;
-  }
-
-  .menuOpen .nav--main ul {
-    left: 0;
-  }
-
-  .menuOpen .nav--socials ul {
-    left: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .nav ul {
-    justify-content: center;
-    height: 100%;
-    gap: 1em;
-  }
-
-  .nav--socials ul {
-    gap: 0;
-  }
-}
-
-.nav a,
-#date {
+.nav a {
   text-decoration: none;
   height: 100%;
   display: flex;
@@ -102,27 +87,15 @@
   padding: 1em;
 }
   
+  /* desktop */
   @media (min-width: 1200px) {
-    .nav a,
-    #date {
+    .nav a {
       padding: 0 .5em;
     }
   }
 
-#date {
-  display: none;
-}
-  
-  @media (min-width: 1200px) {
-    #date {
-      display: flex;
-    }
-  }
-
 .nav a:hover,
-#date:hover,
 .menuIcon:hover {
-  /* background-color: #FE9EE9; */
   background-color: var(--link-color);
   color: #fff;
 }
@@ -136,7 +109,8 @@
   display: block;
   cursor: url(./img/cursor-1.png), pointer;
 }
-  
+ 
+  /* desktop */
   @media (min-width: 1200px) {
     .menuIcon {
       display: none;

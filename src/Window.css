@@ -1,6 +1,5 @@
 .window {
   border: 5px solid var(--window-bar-bg-color);
-  /* overflow-y: scroll; */
   overflow-y: hidden;
   box-shadow: 1px 1px 5px var(--window-bar-bg-color);
   background-color: var(--window-bg-color);
@@ -16,13 +15,9 @@
     }
   }
 
-#stream_embed {
-  width: 100%;
-}
-
+#stream_embed,
 #chat_embed {
   width: 100%;
-  /* height: 96%; */
 }
 
   @media (min-width: 800px) {
@@ -51,10 +46,7 @@
 .window__bar {
   background-color: var(--window-bar-bg-color);
   color: var(--window-text-color);
-  /* position: sticky; */
-  /* top: 0; */
   text-align: center;
-  /* z-index: 1; */
   position: absolute;
   top: 0;
   left: 0;

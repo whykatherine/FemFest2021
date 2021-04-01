@@ -46,40 +46,37 @@ class Header extends Component {
         <div>
           <nav className="nav nav--socials">
             <ul>
-              {/*<li id="date">
-                <span title="be there or be square :)">4/3/21</span>
-              </li>*/}
               <li>
                 <a href="https://drive.google.com/drive/folders/1k2ufAhjtYr4gVxSjvz8GwJd7hq1yJwKn"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   FemFest Backgrounds
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/uscfemfest"
                   aria-label="Instagram" title="Instagram"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/USCFemFest"
                   aria-label="Twitter" title="Twitter"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-twitter" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitch.tv/femfest"
                   aria-label="Twitch" title="Twitch"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-twitch" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://open.spotify.com/playlist/27YwAmEiOtgthJhSM3eBBT?utm_source=embed_v2&go=1&play=1&nd=1"
                   aria-label="Spotify" title="Spotify"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-spotify" aria-hidden="true"></i>
                 </a>
               </li>

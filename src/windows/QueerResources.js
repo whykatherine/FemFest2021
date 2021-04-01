@@ -35,7 +35,7 @@ function QueerResources(props) {
       <div className="gallery gallery--resources">
         {Object.keys(resources).map(r => (
           <div className="gallery__item" key={r}>
-            <p><a href={resources[r]["link"]} target="_blank" rel="noreferrer">{r}</a></p>
+            <p><a href={resources[r]["link"]} target="_blank" rel="noopener noreferrer">{r}</a></p>
             <p>{resources[r]["description"]}</p>
           </div>
         ))}

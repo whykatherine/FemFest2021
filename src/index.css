@@ -14,25 +14,23 @@ https://docs.google.com/presentation/d/1NmrN_U9t7qVDccgHuSaNbfMPGQBHHfKb9VcgyZTj
   --window-text-color: #fff;
 }
 
- /* width */
+/* custom scrollbar for supported browsers */
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--link-color);
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--link-hover-color);
-} 
+}
 
 *,
 *::before,
@@ -85,6 +83,7 @@ h6 {
   color: var(--heading-color);
   line-height: 1;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -107,7 +106,7 @@ h2 {
 
 .container {
   position: relative;
-  min-height: 150vh;
+  min-height: 120vh;
   max-width: 100%;
   margin: 4em 0;
 }
@@ -121,39 +120,30 @@ h2 {
 /* desktop icons */
 
 .desktop__icons {
+  margin: 2em .5em;
   display: flex;
   flex-direction: row;
   gap: .5em;
-  margin: 2em .5em;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
-.desktop__icon {
-  display: flex;
-  flex-direction: column;
-  gap: .5em;
-  align-items: center;
-}
-
 .desktop__icon img {
-  max-height: 50px;
-  max-width: 80%;
+  height: 50px;
 }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     .desktop__icons {
       position: absolute;
       top: 20px;
       right: 0;
-      width: 8%;
+      margin: 0;
       flex-direction: column;
       gap: 2em;
-      margin: 0;
     }
 
-    .desktop__icon {
-      width: 100%;
+    .desktop__icon img {
+      height: 75px;
     }
   }

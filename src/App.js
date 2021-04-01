@@ -137,7 +137,9 @@ class App extends Component {
 
             <div className="desktop__icons">
               {Object.keys(this.sponsors).map(s => (
-                <a href={this.sponsors[s]["link"]} title={s} key={s} className="desktop__icon" target="_blank" rel="noreferrer">
+                <a href={this.sponsors[s]["link"]} title={s} key={s}
+                   className="desktop__icon"
+                   target="_blank" rel="noopener noreferrer">
                   <img src={"/img/sponsors/" + this.sponsors[s]["logo"]} alt={s + " logo"} />
                 </a>
               ))}
@@ -158,7 +160,6 @@ class App extends Component {
    * @param string windowClass Name of window to bring to front.
    */
   handleReorder(windowClass) {
-    // this.windows.
     let index = this.state.order.indexOf(windowClass);
     // make a copy to work on
     let newOrder = this.state.order.slice();
