@@ -12,32 +12,33 @@ class Header extends Component {
       "menuIsOpen": false
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   render() {
     return (
       <header className={"header " + ((this.state.menuIsOpen) ? "menuOpen" : "")}>
         <div>
-          <Link to="/"><img className="logo" src={logo} alt="FemFest logo" /></Link>
+          <Link to="/" onClick={this.closeMenu}><img className="logo" src={logo} alt="FemFest logo" /></Link>
           <nav className="nav nav--main">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={this.closeMenu}>Home</Link>
               </li>
               <li>
-                <Link to="/marketplace">Marketplace</Link>
+                <Link to="/marketplace" onClick={this.closeMenu}>Marketplace</Link>
               </li>
               <li>
-                <Link to="/merch">Merch</Link>
+                <Link to="/merch" onClick={this.closeMenu}>Merch</Link>
               </li>
               <li>
-                <Link to="/library">Library</Link>
+                <Link to="/library" onClick={this.closeMenu}>Library</Link>
               </li>
               <li>
-                <Link to="/visual-art">Visual Art</Link>
+                <Link to="/visual-art" onClick={this.closeMenu}>Visual Art</Link>
               </li>
               <li>
-                <Link to="/queer-resources">Queer Resources</Link>
+                <Link to="/queer-resources" onClick={this.closeMenu}>Queer Resources</Link>
               </li>
             </ul>
           </nav>
@@ -96,6 +97,12 @@ class Header extends Component {
     this.setState((state) => ({
       menuIsOpen: !state.menuIsOpen
     }));
+  }
+
+  closeMenu() {
+    this.setState({
+      menuIsOpen: false
+    })
   }
 }
 
