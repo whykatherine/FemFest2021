@@ -6,6 +6,7 @@ import Header from './Header';
 import Window from './Window';
 import Stream from './stream/Stream';
 import StreamChat from './stream/StreamChat';
+import Playlist from './Playlist';
 import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
 import Merch from './pages/Merch';
@@ -17,7 +18,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "order": ["window--main", "window--stream", "window--chat"]
+      "order": ["window--main", "window--stream", "window--chat", "window--playlist"]
     }
     this.handleReorder = this.handleReorder.bind(this);
 
@@ -72,6 +73,16 @@ class App extends Component {
                 left="63%"
                 width="20%">
           <StreamChat />
+        </Window>
+      ),
+      'window--playlist': (
+        <Window handleReorder={this.handleReorder}
+                title="Playlist"
+                windowClass="window--playlist"
+                top="600px"
+                left="10%"
+                width="24%">
+          <Playlist />
         </Window>
       ),
       'window--main': (

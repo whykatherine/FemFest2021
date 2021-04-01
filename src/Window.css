@@ -42,6 +42,11 @@
     .window--chat .window__content:not(.hidden) {
       height: 350px;
     }
+
+    .window--playlist .window__content:not(.hidden) {
+      height: 420px;
+      padding: 2em .5em;
+    }
   }
 
 .window__bar {
