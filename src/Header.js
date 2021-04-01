@@ -46,9 +46,9 @@ class Header extends Component {
         <div>
           <nav className="nav nav--socials">
             <ul>
-              <li id="date">
+              {/*<li id="date">
                 <span title="be there or be square :)">4/3/21</span>
-              </li>
+              </li>*/}
               <li>
                 <a href="https://drive.google.com/drive/folders/1k2ufAhjtYr4gVxSjvz8GwJd7hq1yJwKn"
                   target="_blank" rel="noreferrer">
