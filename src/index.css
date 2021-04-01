@@ -110,8 +110,14 @@ h2 {
   position: relative;
   min-height: 150vh;
   max-width: 100%;
-  margin: 2em 0;
+  margin: 4em 0;
 }
+
+  @media (min-width: 800px) {
+    .container {
+      margin: 4em;
+    }
+  }
 
 /* desktop icons */
 
@@ -141,7 +147,7 @@ h2 {
     .desktop__icons {
       position: absolute;
       top: 20px;
-      right: 1%;
+      right: 0;
       width: 8%;
       flex-direction: column;
       gap: 2em;
