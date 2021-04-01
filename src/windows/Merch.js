@@ -90,10 +90,6 @@ function Merch(props) {
         <h1 data-content="Merch">Merch</h1>
       </div>
 
-      {/*<div className="text">
-      	<p>COMING SOON</p>
-      </div>*/}
-
       {Object.keys(merch).map(cat => (
         <div className="text" key={cat}>
           <h2>{cat}</h2>
