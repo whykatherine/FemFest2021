@@ -48,10 +48,6 @@
     }
   }
 
-.nav--socials ul {
-  gap: 0;
-}
-
 .nav--socials i {
   font-size: 2em;
 }
@@ -81,6 +77,10 @@
     justify-content: center;
     height: 100%;
     gap: 1em;
+  }
+
+  .nav--socials ul {
+    gap: 0;
   }
 }
 
