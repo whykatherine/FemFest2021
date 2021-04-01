@@ -120,18 +120,18 @@ class Marketplace extends Component {
             referrerPolicy="noreferrer"></iframe>*/}
 
           {Object.keys(vendors).map(cat => (
-            <div key={cat}>
+            <div className="text" key={cat}>
               <h2 onClick={this.handleClick}>{cat}</h2>
               <div className="gallery">
-                {/*{Object.keys(vendors[cat]).map(vendor => (
+                {Object.keys(vendors[cat]).map(vendor => (
                   <div className="gallery__item" key={vendor}>
                     <div className="gallery__item_image">
                       <a href={vendors[cat][vendor]["link"]} target="_blank" rel="noreferrer"><img src={"/img/vendors/" + vendors[cat][vendor]["logo"]} alt={vendor + " logo"} /></a>
                     </div>
-                    <p><a href={vendors[cat][vendor]["link"]} target="_blank" rel="noreferrer">{vendor}</a></p>
-                    <p>{vendors[cat][vendor]["description"]}</p>
+                    {/*<p><a href={vendors[cat][vendor]["link"]} target="_blank" rel="noreferrer">{vendor}</a></p>*/}
+                    {/*<p>{vendors[cat][vendor]["description"]}</p>*/}
                   </div>
-                ))}*/}
+                ))}
               </div>
             </div>
           ))}
