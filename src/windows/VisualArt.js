@@ -12,6 +12,7 @@ function VisualArt(props) {
       <div className="text">
         <p>COMING SOON</p>
       </div>
+      
     </div>
   );
 }
