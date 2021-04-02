@@ -3,7 +3,7 @@ import React from 'react';
 
 function QueerResources(props) {
   let resources = {
-    "Audrey Lorde Health Programs": {
+    "Audre Lorde Health Programs": {
       "link": "https://lalgbtcenter.org/health-services/medical-services/primary-care-women",
       "description": "At the Los Angeles LGBT Center's Audre Lorde Health Program for lesbian and bi women, we offer the full range of primary medical care services by staff who are your partners in leading heathier and happier lives."
     },
