@@ -52,80 +52,6 @@ class App extends Component {
         "link":  "https://usclsa.org/"
       }
     };
-
-    // bit hack-y, think how to refactor
-    this.windows = {
-      'window--stream': (
-        <Window handleReorder={this.handleReorder}
-                title="Stream"
-                windowClass="window--stream"
-                delay={200}>
-          <Stream />
-        </Window>
-      ),
-      'window--chat': (
-        <Window handleReorder={this.handleReorder}
-                title="Chat"
-                windowClass="window--chat"
-                delay={400}>
-          <StreamChat />
-        </Window>
-      ),
-      'window--playlist': (
-        <Window handleReorder={this.handleReorder}
-                title="Playlist"
-                windowClass="window--playlist"
-                delay={600}>
-          <Playlist />
-        </Window>
-      ),
-      'window--main': (
-        <Switch>
-          <Route exact path="/">
-            <Window handleReorder={this.handleReorder}
-                    title="Home"
-                    delay={0}>
-              <Home />
-            </Window>
-          </Route>
-          <Route path="/marketplace">
-            <Window handleReorder={this.handleReorder}
-                    title="Marketplace"
-                    delay={0}>
-              <Marketplace />
-            </Window>
-          </Route>
-          <Route path="/merch">
-            <Window handleReorder={this.handleReorder}
-                    title="Merch"
-                    delay={0}>
-              <Merch />
-            </Window>
-          </Route>
-          <Route path="/library">
-            <Window handleReorder={this.handleReorder}
-                    title="Library"
-                    delay={0}>
-              <Library />
-            </Window>
-          </Route>
-          <Route path="/visual-art">
-            <Window handleReorder={this.handleReorder}
-                    title="Visual Art"
-                    delay={0}>
-              <VisualArt />
-            </Window>
-          </Route>
-          <Route path="/queer-resources">
-            <Window handleReorder={this.handleReorder}
-                    title="Queer Resources"
-                    delay={0}>
-              <QueerResources />
-            </Window>
-          </Route>
-        </Switch>
-      )
-    };
   }
 
   render() {
@@ -145,9 +71,84 @@ class App extends Component {
               ))}
             </div>
 
-            {this.state.order.map(windowClass => (
+            {/*{this.state.order.map(windowClass => (
               <React.Fragment key={windowClass}>{this.windows[windowClass]}</React.Fragment>
-            ))}
+            ))}*/}
+
+            <Switch>
+              <Route exact path="/">
+                <Window handleReorder={this.handleReorder}
+                        title="Home"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <Home />
+                </Window>
+              </Route>
+              <Route path="/marketplace">
+                <Window handleReorder={this.handleReorder}
+                        title="Marketplace"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <Marketplace />
+                </Window>
+              </Route>
+              <Route path="/merch">
+                <Window handleReorder={this.handleReorder}
+                        title="Merch"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <Merch />
+                </Window>
+              </Route>
+              <Route path="/library">
+                <Window handleReorder={this.handleReorder}
+                        title="Library"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <Library />
+                </Window>
+              </Route>
+              <Route path="/visual-art">
+                <Window handleReorder={this.handleReorder}
+                        title="Visual Art"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <VisualArt />
+                </Window>
+              </Route>
+              <Route path="/queer-resources">
+                <Window handleReorder={this.handleReorder}
+                        title="Queer Resources"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <QueerResources />
+                </Window>
+              </Route>
+            </Switch>
+
+            <Window handleReorder={this.handleReorder}
+                    title="Stream"
+                    windowClass="window--stream"
+                    delay={200}
+                    order={this.state.order.indexOf("window--stream")}>
+              <Stream />
+            </Window>
+
+            <Window handleReorder={this.handleReorder}
+                    title="Chat"
+                    windowClass="window--chat"
+                    delay={400}
+                    order={this.state.order.indexOf("window--chat")}>
+              <StreamChat />
+            </Window>
+
+            <Window handleReorder={this.handleReorder}
+                    title="Playlist"
+                    windowClass="window--playlist"
+                    delay={600}
+                    order={this.state.order.indexOf("window--playlist")}>
+              <Playlist />
+            </Window>
 
           </div>
         </Router>

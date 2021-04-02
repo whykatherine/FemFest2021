@@ -17,9 +17,11 @@ class Window extends Component {
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.elementDrag = this.elementDrag.bind(this);
     this.closeDragElement = this.closeDragElement.bind(this);
+    this.updateZIndex = this.updateZIndex.bind(this);
   }
 
   componentDidMount() {
+    this.updateZIndex();
     // to execute when the component first loads
     setTimeout(() => {
       // pop open window
@@ -35,13 +37,14 @@ class Window extends Component {
   }
 
   render() {
+    let className = "window "
+      + this.windowClass
+      + ((this.state.isMaximized) ? " maximized" : "")
+      + ((this.state.isHidden) ? " hidden" : "");
+
     return (
       // set class name depending on state
-      <div className={
-        "window "
-        + this.windowClass
-        + ((this.state.isMaximized) ? " maximized" : "")
-        + ((this.state.isHidden) ? " hidden" : "")}>
+      <div className={className}>
         <div className="window__content">
           {this.props.children}
         </div>
@@ -50,6 +53,10 @@ class Window extends Component {
         </div>
       </div>
     );
+  }
+
+  componentDidUpdate() {
+    this.updateZIndex();
   }
 
   handleClick(event) {
@@ -94,6 +101,11 @@ class Window extends Component {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+  }
+
+  updateZIndex() {
+    let node = ReactDOM.findDOMNode(this);
+    node.style.zIndex = this.props.order;
   }
 }
 
