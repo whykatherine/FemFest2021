@@ -31,12 +31,7 @@
       height: 0;
       /* easeInOutBack */
       transition: all .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-      /* transition: all .5s ease-in-out; */
     }
-
-    /* .hidden {
-      transition: all .5s ease-in-out;
-    } */
 
     .window--main.maximized {
       top: 20px;
@@ -116,10 +111,8 @@
 
 .window__content {
   padding: 2em;
-  /* height: 400px; */
   height: 100%;
   overflow-y: scroll;
-  /* transition: 0.2s height ease-in-out, 0.2s margin-top ease-in-out; */
 }
 
   @media (min-width: 800px) {

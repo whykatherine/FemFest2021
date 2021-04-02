@@ -20,15 +20,23 @@ class Window extends Component {
   }
 
   componentDidMount() {
+    // to execute when the component first loads
     setTimeout(() => {
+      // pop open window
       this.setState({
         isMaximized: true
       });
-    }, this.props.delay);
+      // change transition style after initial pop open
+      setTimeout(() => {
+        let node = ReactDOM.findDOMNode(this);
+        node.style.transition = "height 0.5s ease-in-out";
+      }, 500);
+    }, this.props.delay); // staggered between windows
   }
 
   render() {
     return (
+      // set class name depending on state
       <div className={
         "window "
         + this.windowClass
@@ -77,10 +85,9 @@ class Window extends Component {
       e.clientY
     ];
     // set the element's new position:
-    this.setState({
-      "top": (ReactDOM.findDOMNode(this).offsetTop - this.pos[1]) + "px",
-      "left": (ReactDOM.findDOMNode(this).offsetLeft - this.pos[0]) + "px"
-    });
+    let node = ReactDOM.findDOMNode(this);
+    node.style.top = (node.offsetTop - this.pos[1]) + "px";
+    node.style.left = (node.offsetLeft - this.pos[0]) + "px";
   }
 
   closeDragElement() {
