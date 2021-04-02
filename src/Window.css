@@ -20,7 +20,27 @@
 #chat_embed {
   width: 100%;
 }
+  
+  /* mobile */
+  @media (max-width: 800px) {
+    .window--main:not(.hidden) {
+      height: 600px;
+    }
 
+    .window--stream:not(.hidden) {
+      height: 420px;
+    }
+
+    .window--chat:not(.hidden) {
+      height: 540px;
+    }
+
+    .window--playlist:not(.hidden) {
+      height: 420px;
+    }
+  }
+
+  /* desktop */
   @media (min-width: 800px) {
     .window {
       position: absolute;
