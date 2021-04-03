@@ -1,7 +1,7 @@
 // modules
 import React from 'react';
 // assets
-import lineup from '../img/lineup.jpeg';
+import lineup from '../img/lineup.jpg';
 
 function Home(props) {
   return (
