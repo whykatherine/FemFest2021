@@ -86,6 +86,11 @@ function Merch(props) {
         <h1 data-content="Merch">Merch</h1>
       </div>
 
+      <div className="text">
+      	<h2>FemFest 2021</h2>
+      	<a href="https://femfest.square.site/" target="_blank" rel="noopener noreferrer"><img src={"/img/merch/femfest.png"} alt="Femfest logo" /></a>
+      </div>
+
       {Object.keys(merch).map(cat => (
         <div className="text" key={cat}>
           <h2>{cat}</h2>
