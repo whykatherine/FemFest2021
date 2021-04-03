@@ -10,6 +10,7 @@ function Home(props) {
       <div className="text">
         <h1 data-content="FEMFEST 2021">FEMFEST 2021</h1>
         <p>04.03.21</p>
+        <p>4–9 PM PST</p>
       </div>
 
       <div className="text">
