@@ -12,6 +12,17 @@ function Home(props) {
         <p>04.03.21</p>
       </div>
 
+      <div className="text">
+        <h2>Enter the Fest</h2>
+        <p>Welcome! There are three ways you can enjoy the show today:</p>
+        <h3>Topia</h3>
+        <p>Get the full interactive experience of our vibrantly designed virtual space in <a href="https://topia.io/femfest">Topia</a>.</p>
+        <h3>Website</h3>
+        <p>Put the show on in the background right here while you browse our content.</p>
+        <h3>Twitch</h3>
+        <p>Focus on watching the show on <a href="https://twitch.tv/femfest">Twitch</a>, for maximum audio and visual enjoyment.</p>
+      </div>
+
       <div className="image">
         <img src={lineup} alt="FemFest 2021 lineup" />
       </div>

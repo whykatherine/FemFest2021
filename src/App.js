@@ -145,7 +145,7 @@ class App extends Component {
             <Window handleReorder={this.handleReorder}
                     title="Playlist"
                     windowClass="window--playlist"
-                    delay={600}
+                    delay={800}
                     order={this.state.order.indexOf("window--playlist")}>
               <Playlist />
             </Window>
