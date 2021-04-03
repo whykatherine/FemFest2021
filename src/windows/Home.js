@@ -18,7 +18,7 @@ function Home(props) {
 
       <div className="text">
         <h2 data-content="Mission Statement">Mission Statement</h2>
-        <p>SAGE’s FemFest aims to be an inclusive safe space that highlights those oppressed by the patriarchy in the music industry. Intersectional at our core, FemFest is open to everyone, and specifically amplifies the voices of womxn, people of color, and those within the LGBTQ+ community.</p>
+        <p>SAGE’s FemFest aims to be an inclusive safe space that highlights those oppressed by the patriarchy in the music industry. Intersectional at our core, FemFest is open to everyone, and specifically amplifies the voices of women, people of color, and those within the LGBTQ+ community.</p>
         <p>This year, due to the novel coronavirus, Femfest will be held online. This unprecedented opportunity gives our committee the chance to create a new experience for the USC community. Not just a music festival, Femfest will strive to entertain, educate and empower those who oppose the patriarchy.</p>
         <p>Watch this space for ways to engage with Femfest and for event updates.</p>
       </div>
