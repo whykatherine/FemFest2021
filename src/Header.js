@@ -35,10 +35,10 @@ class Header extends Component {
                 <Link to="/library" onClick={this.closeMenu}>Library</Link>
               </li>
               <li>
-                <Link to="/visual-art" onClick={this.closeMenu}>Visual Art</Link>
+                <Link to="/queer-resources" onClick={this.closeMenu}>Queer Resources</Link>
               </li>
               <li>
-                <Link to="/queer-resources" onClick={this.closeMenu}>Queer Resources</Link>
+                <Link to="/visions-and-voices" onClick={this.closeMenu}>Visions & Voices</Link>
               </li>
             </ul>
           </nav>

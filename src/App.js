@@ -11,8 +11,8 @@ import Home from './windows/Home';
 import Marketplace from './windows/Marketplace';
 import Merch from './windows/Merch';
 import Library from './windows/Library';
-import VisualArt from './windows/VisualArt';
 import QueerResources from './windows/QueerResources';
+import VnV from './windows/VnV';
 
 class App extends Component {
   constructor(props) {
@@ -108,20 +108,20 @@ class App extends Component {
                   <Library />
                 </Window>
               </Route>
-              <Route path="/visual-art">
-                <Window handleReorder={this.handleReorder}
-                        title="Visual Art"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <VisualArt />
-                </Window>
-              </Route>
               <Route path="/queer-resources">
                 <Window handleReorder={this.handleReorder}
                         title="Queer Resources"
                         delay={0}
                         order={this.state.order.indexOf("window--main")}>
                   <QueerResources />
+                </Window>
+              </Route>
+              <Route path="/visions-and-voices">
+                <Window handleReorder={this.handleReorder}
+                        title="Visions & Voices"
+                        delay={0}
+                        order={this.state.order.indexOf("window--main")}>
+                  <VnV />
                 </Window>
               </Route>
             </Switch>
