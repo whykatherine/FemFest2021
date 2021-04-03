@@ -15,7 +15,7 @@ function Home(props) {
 
       <div className="text">
         <h2>Enter the Fest</h2>
-        <p>Welcome! There are three ways you can enjoy the show today:</p>
+        <p>Welcome! There are three equally great ways you can enjoy the show today:</p>
         <h3>Topia</h3>
         <p>Get the full interactive experience of our vibrantly designed virtual space in <a href="https://topia.io/femfest">Topia</a>.</p>
         <h3>Website</h3>
