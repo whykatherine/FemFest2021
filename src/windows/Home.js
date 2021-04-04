@@ -21,7 +21,7 @@ function Home(props) {
         <h3>Website</h3>
         <p>Put the show on in the background right here while you browse our content.</p>
         <h3>Twitch</h3>
-        <p>Focus on watching the show on <a href="https://twitch.tv/femfest">Twitch</a>, for maximum audio and visual enjoyment.</p>
+        <p>Focus on watching the show on <a href="https://twitch.tv/femfest2021">Twitch</a>, for maximum audio and visual enjoyment.</p>
       </div>
 
       <div className="image">

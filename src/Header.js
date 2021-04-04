@@ -73,7 +73,7 @@ class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="https://twitch.tv/femfest"
+                <a href="https://twitch.tv/femfest2021"
                   aria-label="Twitch" title="Twitch"
                   target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-twitch" aria-hidden="true"></i>
