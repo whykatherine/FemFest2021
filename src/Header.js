@@ -38,7 +38,7 @@ class Header extends Component {
                 <Link to="/queer-resources" onClick={this.closeMenu}>Queer Resources</Link>
               </li>
               <li>
-                <Link to="/visions-and-voices" onClick={this.closeMenu}>Visions & Voices</Link>
+                <Link to="/visions-and-voices" onClick={this.closeMenu}>V&V</Link>
               </li>
             </ul>
           </nav>
@@ -47,9 +47,14 @@ class Header extends Component {
           <nav className="nav nav--socials">
             <ul>
               <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ3dkYFCJOMf-V1Cd8bY6VNtrFWNmQE86CJwGYNWmu9D_amw/viewform" target="_blank" rel="noopener noreferrer">
+                  Artist Promotion
+                </a>
+              </li>
+              <li>
                 <a href="https://drive.google.com/drive/folders/1k2ufAhjtYr4gVxSjvz8GwJd7hq1yJwKn"
                   target="_blank" rel="noopener noreferrer">
-                  FemFest Backgrounds
+                  Backgrounds
                 </a>
               </li>
               <li>
