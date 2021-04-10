@@ -56,103 +56,97 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Router>
-          <Header />
-          <div className="container">
+      <Router>
+        <Header />
+        <div className="container">
 
-            <div className="desktop__icons">
-              {Object.keys(this.sponsors).map(s => (
-                <a href={this.sponsors[s]["link"]} title={s} key={s}
-                   className="desktop__icon"
-                   target="_blank" rel="noopener noreferrer">
-                  <img src={"/img/sponsors/" + this.sponsors[s]["logo"]} alt={s + " logo"} />
-                </a>
-              ))}
-            </div>
-
-            {/*{this.state.order.map(windowClass => (
-              <React.Fragment key={windowClass}>{this.windows[windowClass]}</React.Fragment>
-            ))}*/}
-
-            <Switch>
-              <Route exact path="/">
-                <Window handleReorder={this.handleReorder}
-                        title="Home"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <Home />
-                </Window>
-              </Route>
-              <Route path="/marketplace">
-                <Window handleReorder={this.handleReorder}
-                        title="Marketplace"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <Marketplace />
-                </Window>
-              </Route>
-              <Route path="/merch">
-                <Window handleReorder={this.handleReorder}
-                        title="Merch"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <Merch />
-                </Window>
-              </Route>
-              <Route path="/library">
-                <Window handleReorder={this.handleReorder}
-                        title="Library"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <Library />
-                </Window>
-              </Route>
-              <Route path="/queer-resources">
-                <Window handleReorder={this.handleReorder}
-                        title="Queer Resources"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <QueerResources />
-                </Window>
-              </Route>
-              <Route path="/visions-and-voices">
-                <Window handleReorder={this.handleReorder}
-                        title="Visions & Voices"
-                        delay={0}
-                        order={this.state.order.indexOf("window--main")}>
-                  <VnV />
-                </Window>
-              </Route>
-            </Switch>
-
-            <Window handleReorder={this.handleReorder}
-                    title="Stream"
-                    windowClass="window--stream"
-                    delay={200}
-                    order={this.state.order.indexOf("window--stream")}>
-              <Stream />
-            </Window>
-
-            <Window handleReorder={this.handleReorder}
-                    title="Chat"
-                    windowClass="window--chat"
-                    delay={400}
-                    order={this.state.order.indexOf("window--chat")}>
-              <StreamChat />
-            </Window>
-
-            <Window handleReorder={this.handleReorder}
-                    title="Playlist"
-                    windowClass="window--playlist"
-                    delay={800}
-                    order={this.state.order.indexOf("window--playlist")}>
-              <Playlist />
-            </Window>
-
+          <div className="desktop__icons">
+            {Object.keys(this.sponsors).map(s => (
+              <a href={this.sponsors[s]["link"]} title={s} key={s}
+                 className="desktop__icon"
+                 target="_blank" rel="noopener noreferrer">
+                <img src={"/img/sponsors/" + this.sponsors[s]["logo"]} alt={s + " logo"} />
+              </a>
+            ))}
           </div>
-        </Router>
-      </React.Fragment>
+
+          <Switch>
+            <Route exact path="/">
+              <Window handleReorder={this.handleReorder}
+                      title="Home"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <Home />
+              </Window>
+            </Route>
+            <Route path="/marketplace">
+              <Window handleReorder={this.handleReorder}
+                      title="Marketplace"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <Marketplace />
+              </Window>
+            </Route>
+            <Route path="/merch">
+              <Window handleReorder={this.handleReorder}
+                      title="Merch"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <Merch />
+              </Window>
+            </Route>
+            <Route path="/library">
+              <Window handleReorder={this.handleReorder}
+                      title="Library"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <Library />
+              </Window>
+            </Route>
+            <Route path="/queer-resources">
+              <Window handleReorder={this.handleReorder}
+                      title="Queer Resources"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <QueerResources />
+              </Window>
+            </Route>
+            <Route path="/visions-and-voices">
+              <Window handleReorder={this.handleReorder}
+                      title="Visions & Voices"
+                      delay={0}
+                      order={this.state.order.indexOf("window--main")}>
+                <VnV />
+              </Window>
+            </Route>
+          </Switch>
+
+          <Window handleReorder={this.handleReorder}
+                  title="Stream"
+                  windowClass="window--stream"
+                  delay={200}
+                  order={this.state.order.indexOf("window--stream")}>
+            <Stream />
+          </Window>
+
+          <Window handleReorder={this.handleReorder}
+                  title="Chat"
+                  windowClass="window--chat"
+                  delay={400}
+                  order={this.state.order.indexOf("window--chat")}>
+            <StreamChat />
+          </Window>
+
+          <Window handleReorder={this.handleReorder}
+                  title="Playlist"
+                  windowClass="window--playlist"
+                  delay={800}
+                  order={this.state.order.indexOf("window--playlist")}>
+            <Playlist />
+          </Window>
+
+        </div>
+      </Router>
     );
   }
 
